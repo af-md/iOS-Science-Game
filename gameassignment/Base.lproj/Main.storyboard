@@ -95,23 +95,58 @@
                     <view key="view" contentMode="scaleToFill" id="OUW-ek-f9g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMc-H1-gwq">
+                                <rect key="frame" x="131" y="157" width="190" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="KaX-TM-FuH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFs-Tr-o6w">
+                                <rect key="frame" x="10" y="216" width="391" height="608"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBp-8L-lEp">
+                                        <rect key="frame" x="30" y="29" width="331" height="304"/>
+                                        <mutableString key="text">Welcome to the Basic Cell Survive Game. This game will teach you what a cell consumes in order to survive. Points will be gained by consuming white and red blood cells. If a Pathogen is consumed, you will lose 1 health. Cells are the basic building blocks of all living things. The human body is composed of trillions of cells. They provide structure for the body, take in nutrients from food, convert those nutrients into energy, and carry out specialized functions.nnCells also contain the body’s hereditary material and can make copies of themselves. Below image of a cell.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tBp-8L-lEp" firstAttribute="leading" secondItem="Y55-Hr-tDG" secondAttribute="leading" constant="30" id="2fk-wv-yjn"/>
+                                    <constraint firstItem="tBp-8L-lEp" firstAttribute="top" secondItem="Y55-Hr-tDG" secondAttribute="top" constant="15" id="JcC-MG-FDm"/>
+                                    <constraint firstItem="Y55-Hr-tDG" firstAttribute="trailing" secondItem="tBp-8L-lEp" secondAttribute="trailing" constant="30" id="mVJ-8r-Yto"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="pud-cA-DBu"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Y55-Hr-tDG"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ru2-i8-7e9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="Ru2-i8-7e9" firstAttribute="bottom" secondItem="mFs-Tr-o6w" secondAttribute="bottom" constant="38" id="EWv-zd-r5h"/>
+                            <constraint firstItem="tMc-H1-gwq" firstAttribute="leading" secondItem="Ru2-i8-7e9" secondAttribute="leading" constant="131" id="Otv-aA-gcX"/>
+                            <constraint firstItem="Ru2-i8-7e9" firstAttribute="trailing" secondItem="mFs-Tr-o6w" secondAttribute="trailing" constant="13" id="Xoe-Xm-Hna"/>
+                            <constraint firstItem="mFs-Tr-o6w" firstAttribute="leading" secondItem="Ru2-i8-7e9" secondAttribute="leading" constant="10" id="dIL-Gp-HNp"/>
+                            <constraint firstItem="tMc-H1-gwq" firstAttribute="top" secondItem="Ru2-i8-7e9" secondAttribute="top" constant="69" id="sie-tj-xh0"/>
+                            <constraint firstItem="mFs-Tr-o6w" firstAttribute="top" secondItem="tMc-H1-gwq" secondAttribute="bottom" constant="26" id="vTT-T2-gYe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yZ2-Ce-U9I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoG-Jn-1Ej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="145"/>
+            <point key="canvasLocation" x="1118.840579710145" y="144.64285714285714"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="K5K-LD-3oQ"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
