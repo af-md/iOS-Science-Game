@@ -13,6 +13,10 @@
 		427B71CA264145A200128855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427B71C8264145A200128855 /* Main.storyboard */; };
 		427B71CC264145A400128855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427B71CB264145A400128855 /* Assets.xcassets */; };
 		427B71CF264145A400128855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427B71CD264145A400128855 /* LaunchScreen.storyboard */; };
+		42D7F942264321C100304DDF /* Predator Cell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F93E264321C100304DDF /* Predator Cell.jpeg */; };
+		42D7F943264321C100304DDF /* Pathogen.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F93F264321C100304DDF /* Pathogen.jpeg */; };
+		42D7F944264321C100304DDF /* Red Cell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F940264321C100304DDF /* Red Cell.jpeg */; };
+		42D7F945264321C100304DDF /* White Cell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F941264321C100304DDF /* White Cell.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		427B71CB264145A400128855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		427B71CE264145A400128855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		427B71D0264145A400128855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D7F93E264321C100304DDF /* Predator Cell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Predator Cell.jpeg"; sourceTree = "<group>"; };
+		42D7F93F264321C100304DDF /* Pathogen.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pathogen.jpeg; sourceTree = "<group>"; };
+		42D7F940264321C100304DDF /* Red Cell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red Cell.jpeg"; sourceTree = "<group>"; };
+		42D7F941264321C100304DDF /* White Cell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "White Cell.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		427B71B6264145A200128855 = {
 			isa = PBXGroup;
 			children = (
+				42D7F93D2642ED4600304DDF /* Resources */,
 				427B71C1264145A200128855 /* gameassignment */,
 				427B71C0264145A200128855 /* Products */,
 			);
@@ -65,6 +74,17 @@
 				427B71D0264145A400128855 /* Info.plist */,
 			);
 			path = gameassignment;
+			sourceTree = "<group>";
+		};
+		42D7F93D2642ED4600304DDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42D7F93F264321C100304DDF /* Pathogen.jpeg */,
+				42D7F93E264321C100304DDF /* Predator Cell.jpeg */,
+				42D7F940264321C100304DDF /* Red Cell.jpeg */,
+				42D7F941264321C100304DDF /* White Cell.jpeg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +144,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D7F943264321C100304DDF /* Pathogen.jpeg in Resources */,
 				427B71CF264145A400128855 /* LaunchScreen.storyboard in Resources */,
 				427B71CC264145A400128855 /* Assets.xcassets in Resources */,
 				427B71CA264145A200128855 /* Main.storyboard in Resources */,
+				42D7F944264321C100304DDF /* Red Cell.jpeg in Resources */,
+				42D7F942264321C100304DDF /* Predator Cell.jpeg in Resources */,
+				42D7F945264321C100304DDF /* White Cell.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

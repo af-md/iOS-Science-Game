@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,57 +97,253 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMc-H1-gwq">
-                                <rect key="frame" x="131" y="157" width="190" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="KaX-TM-FuH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFs-Tr-o6w">
-                                <rect key="frame" x="10" y="216" width="391" height="608"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MC1-9u-BXg">
+                                <rect key="frame" x="-1" y="0.0" width="415" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBp-8L-lEp">
-                                        <rect key="frame" x="30" y="29" width="331" height="304"/>
-                                        <mutableString key="text">Welcome to the Basic Cell Survive Game. This game will teach you what a cell consumes in order to survive. Points will be gained by consuming white and red blood cells. If a Pathogen is consumed, you will lose 1 health. Cells are the basic building blocks of all living things. The human body is composed of trillions of cells. They provide structure for the body, take in nutrients from food, convert those nutrients into energy, and carry out specialized functions.nnCells also contain the body’s hereditary material and can make copies of themselves. Below image of a cell.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wRn-pt-MXa">
+                                        <rect key="frame" x="0.0" y="0.0" width="415" height="3000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTx-ly-7B3">
+                                                <rect key="frame" x="0.0" y="0.0" width="415" height="3000"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvw-4Z-10L">
+                                                        <rect key="frame" x="30" y="30" width="355" height="23"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="INSTRUCTIONS">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsK-xm-GGw">
+                                                        <rect key="frame" x="8" y="83" width="399" height="501.5"/>
+                                                        <mutableString key="text">Welcome to the Basic Cell Survive Game. This game will teach you what a cell consumes to survive. Points will be gained by consuming white and red blood cells. If a Pathogen is consumed, you will lose 1 health. Cells are the basic building blocks of all living things. The human body is composed of trillions of cells. They provide structure for the body, take in nutrients from food, convert those nutrients into energy, and carry out specialized functions. Cells also contain the body’s hereditary material and can make copies of themselves. Below image of a cell.</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Predator Cell.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="les-0c-Fiv">
+                                                        <rect key="frame" x="87" y="574" width="240" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="jWJ-xb-UmX"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfB-bJ-RjF">
+                                                        <rect key="frame" x="8" y="781.5" width="399" height="387"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="387" id="0Jf-xD-7rK"/>
+                                                        </constraints>
+                                                        <string key="text">To survive, every cell must have a constant supply of vital substances such as sugar, minerals, and oxygen, and dispose of waste products, all carried back and forth by the blood cells, such as white and red blood cells. The main job of red blood cells, represented in the image below, is to carry oxygen from the lungs to the body tissues and carbon dioxide as a waste product, away from the tissues and back to the lungs.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Cell.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="V24-GK-61E">
+                                                        <rect key="frame" x="74" y="1201" width="240" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="240" id="LYA-7z-mlJ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgh-hy-Vf0">
+                                                        <rect key="frame" x="8" y="1357" width="399" height="95.5"/>
+                                                        <string key="text">White blood cells, as shown in the image above, are part of the body's immune system. They help the body fight infection and other diseases.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White Cell.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-Gm-S5j">
+                                                        <rect key="frame" x="74" y="1477" width="240" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="7pI-UZ-Cef"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A pathogen brings disease to its host. Another name for a pathogen is an infectious agent, as they cause infections." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6n-dP-Nyt">
+                                                        <rect key="frame" x="8" y="1654" width="399" height="130"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="130" id="qzw-xu-dtN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pathogen.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-zW-aZG">
+                                                        <rect key="frame" x="74" y="1822" width="240" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="tSP-h0-yhY"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-I1-Rhx">
+                                                        <rect key="frame" x="8" y="1982" width="399" height="334"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="334" id="6MP-iS-fQB"/>
+                                                        </constraints>
+                                                        <string key="text">In this game you will have to absorb nutrients and protection from white and red blood cells and avoid the pathogens. The more red and white blood cells your absorb, the more survival points you will gain. Pathogen consumptions is the opposite, you will lose health point. You will be given 5 health points, if you do not avoid the pathogens, you could kill the cell.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-jX-AeS">
+                                                        <rect key="frame" x="8" y="2373" width="399" height="21"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="GOOD LUCK ">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="23" name="Helvetica-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops/>
+                                                                    </paragraphStyle>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="😁">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="23" name=".AppleColorEmojiUI"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops/>
+                                                                    </paragraphStyle>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER PLAYER NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcN-22-f9z">
+                                                        <rect key="frame" x="95" y="2523" width="198" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-Eh-Akh">
+                                                        <rect key="frame" x="140" y="2641" width="122" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="PLAY">
+                                                                    <attributes>
+                                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                        <font key="NSFont" size="18" name="Helvetica"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                            <tabStops/>
+                                                                        </paragraphStyle>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="3Na-2G-daL" kind="show" id="Hbt-GU-ewW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="V24-GK-61E" firstAttribute="leading" secondItem="nTx-ly-7B3" secondAttribute="leading" constant="74" id="03F-kA-LMc"/>
+                                                    <constraint firstItem="cfB-bJ-RjF" firstAttribute="trailing" secondItem="jsK-xm-GGw" secondAttribute="trailing" id="0Q6-iP-DHA"/>
+                                                    <constraint firstItem="cfB-bJ-RjF" firstAttribute="leading" secondItem="jsK-xm-GGw" secondAttribute="leading" id="3Iy-5a-5L1"/>
+                                                    <constraint firstItem="Cgh-hy-Vf0" firstAttribute="trailing" secondItem="cfB-bJ-RjF" secondAttribute="trailing" id="50p-4E-w09"/>
+                                                    <constraint firstItem="tEa-I1-Rhx" firstAttribute="top" secondItem="3Hb-zW-aZG" secondAttribute="bottom" constant="32" id="5MP-3n-lIr"/>
+                                                    <constraint firstItem="tEa-I1-Rhx" firstAttribute="trailing" secondItem="i6n-dP-Nyt" secondAttribute="trailing" id="7Ln-Hn-42L"/>
+                                                    <constraint firstItem="NDa-jX-AeS" firstAttribute="top" secondItem="tEa-I1-Rhx" secondAttribute="bottom" constant="56" id="7NS-37-SZP"/>
+                                                    <constraint firstItem="les-0c-Fiv" firstAttribute="leading" secondItem="nTx-ly-7B3" secondAttribute="leading" constant="78" id="9sf-aH-O98"/>
+                                                    <constraint firstItem="3Hb-zW-aZG" firstAttribute="leading" secondItem="1ab-Gm-S5j" secondAttribute="leading" id="Baf-FC-XFb"/>
+                                                    <constraint firstItem="NDa-jX-AeS" firstAttribute="trailing" secondItem="tEa-I1-Rhx" secondAttribute="trailing" id="Bjt-8Y-m3Y"/>
+                                                    <constraint firstAttribute="width" constant="415" id="EMn-3A-Hge"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cvw-4Z-10L" secondAttribute="trailing" constant="30" id="EwT-3C-fUK"/>
+                                                    <constraint firstItem="i6n-dP-Nyt" firstAttribute="top" secondItem="1ab-Gm-S5j" secondAttribute="bottom" constant="49" id="FOP-cL-5yc"/>
+                                                    <constraint firstItem="3Hb-zW-aZG" firstAttribute="trailing" secondItem="1ab-Gm-S5j" secondAttribute="trailing" id="GTe-Cc-j8U"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1200" id="HDW-xk-HFZ"/>
+                                                    <constraint firstItem="1ab-Gm-S5j" firstAttribute="top" secondItem="Cgh-hy-Vf0" secondAttribute="bottom" constant="24.5" id="Lyw-BA-Icc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jsK-xm-GGw" secondAttribute="trailing" constant="30" id="O1k-gg-VsF"/>
+                                                    <constraint firstItem="cfB-bJ-RjF" firstAttribute="trailing" secondItem="nTx-ly-7B3" secondAttribute="trailingMargin" id="PEF-bQ-Z66"/>
+                                                    <constraint firstItem="cfB-bJ-RjF" firstAttribute="top" secondItem="les-0c-Fiv" secondAttribute="bottom" constant="52" id="Tba-h4-KHh"/>
+                                                    <constraint firstItem="jsK-xm-GGw" firstAttribute="leading" secondItem="nTx-ly-7B3" secondAttribute="leading" constant="30" id="WO1-Dp-F5n"/>
+                                                    <constraint firstItem="i6n-dP-Nyt" firstAttribute="leading" secondItem="Cgh-hy-Vf0" secondAttribute="leading" id="Wpj-hm-Vxe"/>
+                                                    <constraint firstItem="3Hb-zW-aZG" firstAttribute="top" secondItem="i6n-dP-Nyt" secondAttribute="bottom" constant="38" id="Ynw-st-y94"/>
+                                                    <constraint firstItem="1ab-Gm-S5j" firstAttribute="leading" secondItem="V24-GK-61E" secondAttribute="leading" id="a90-va-fVv"/>
+                                                    <constraint firstItem="i6n-dP-Nyt" firstAttribute="trailing" secondItem="Cgh-hy-Vf0" secondAttribute="trailing" id="aJB-OS-k3b"/>
+                                                    <constraint firstItem="cfB-bJ-RjF" firstAttribute="leading" secondItem="nTx-ly-7B3" secondAttribute="leadingMargin" id="aio-0U-PV7"/>
+                                                    <constraint firstItem="cvw-4Z-10L" firstAttribute="leading" secondItem="nTx-ly-7B3" secondAttribute="leading" constant="30" id="cz0-2g-gwk"/>
+                                                    <constraint firstItem="NDa-jX-AeS" firstAttribute="leading" secondItem="tEa-I1-Rhx" secondAttribute="leading" id="e7L-hz-Wbn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="les-0c-Fiv" secondAttribute="trailing" constant="97" id="ekO-6f-LFe"/>
+                                                    <constraint firstItem="tEa-I1-Rhx" firstAttribute="leading" secondItem="i6n-dP-Nyt" secondAttribute="leading" id="ffk-hr-8DW"/>
+                                                    <constraint firstItem="Cgh-hy-Vf0" firstAttribute="leading" secondItem="cfB-bJ-RjF" secondAttribute="leading" id="l67-rQ-ZCC"/>
+                                                    <constraint firstItem="les-0c-Fiv" firstAttribute="top" secondItem="jsK-xm-GGw" secondAttribute="bottom" constant="17" id="oj5-nt-u9v"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3000" id="oja-Kh-wvO"/>
+                                                    <constraint firstItem="V24-GK-61E" firstAttribute="top" secondItem="cfB-bJ-RjF" secondAttribute="bottom" constant="32.5" id="pRZ-rp-HMk"/>
+                                                    <constraint firstItem="cvw-4Z-10L" firstAttribute="top" secondItem="nTx-ly-7B3" secondAttribute="top" constant="30" id="qjH-rJ-v2I"/>
+                                                    <constraint firstItem="Cgh-hy-Vf0" firstAttribute="top" secondItem="V24-GK-61E" secondAttribute="bottom" constant="28" id="vVV-Iv-wki"/>
+                                                    <constraint firstItem="jsK-xm-GGw" firstAttribute="top" secondItem="cvw-4Z-10L" secondAttribute="bottom" constant="30" id="xPc-Jf-9tJ"/>
+                                                    <constraint firstItem="1ab-Gm-S5j" firstAttribute="trailing" secondItem="V24-GK-61E" secondAttribute="trailing" id="zdW-GB-oG2"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3000" id="R5z-JO-PPY"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
-                                    <constraint firstItem="tBp-8L-lEp" firstAttribute="leading" secondItem="Y55-Hr-tDG" secondAttribute="leading" constant="30" id="2fk-wv-yjn"/>
-                                    <constraint firstItem="tBp-8L-lEp" firstAttribute="top" secondItem="Y55-Hr-tDG" secondAttribute="top" constant="15" id="JcC-MG-FDm"/>
-                                    <constraint firstItem="Y55-Hr-tDG" firstAttribute="trailing" secondItem="tBp-8L-lEp" secondAttribute="trailing" constant="30" id="mVJ-8r-Yto"/>
+                                    <constraint firstItem="Hay-zQ-h5X" firstAttribute="top" secondItem="wRn-pt-MXa" secondAttribute="top" id="EDW-3S-VNL"/>
+                                    <constraint firstItem="wRn-pt-MXa" firstAttribute="width" secondItem="Rat-zh-ugg" secondAttribute="width" id="KIg-Mj-31E"/>
+                                    <constraint firstItem="wRn-pt-MXa" firstAttribute="trailing" secondItem="Hay-zQ-h5X" secondAttribute="trailing" id="UH5-3C-G9O"/>
+                                    <constraint firstItem="wRn-pt-MXa" firstAttribute="leading" secondItem="Hay-zQ-h5X" secondAttribute="leading" id="VAO-oh-DQq"/>
+                                    <constraint firstItem="wRn-pt-MXa" firstAttribute="bottom" secondItem="Hay-zQ-h5X" secondAttribute="bottom" id="jYN-bd-RU0"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="pud-cA-DBu"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Y55-Hr-tDG"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Hay-zQ-h5X"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Rat-zh-ugg"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ru2-i8-7e9"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="Ru2-i8-7e9" firstAttribute="bottom" secondItem="mFs-Tr-o6w" secondAttribute="bottom" constant="38" id="EWv-zd-r5h"/>
-                            <constraint firstItem="tMc-H1-gwq" firstAttribute="leading" secondItem="Ru2-i8-7e9" secondAttribute="leading" constant="131" id="Otv-aA-gcX"/>
-                            <constraint firstItem="Ru2-i8-7e9" firstAttribute="trailing" secondItem="mFs-Tr-o6w" secondAttribute="trailing" constant="13" id="Xoe-Xm-Hna"/>
-                            <constraint firstItem="mFs-Tr-o6w" firstAttribute="leading" secondItem="Ru2-i8-7e9" secondAttribute="leading" constant="10" id="dIL-Gp-HNp"/>
-                            <constraint firstItem="tMc-H1-gwq" firstAttribute="top" secondItem="Ru2-i8-7e9" secondAttribute="top" constant="69" id="sie-tj-xh0"/>
-                            <constraint firstItem="mFs-Tr-o6w" firstAttribute="top" secondItem="tMc-H1-gwq" secondAttribute="bottom" constant="26" id="vTT-T2-gYe"/>
+                            <constraint firstAttribute="bottom" secondItem="MC1-9u-BXg" secondAttribute="bottom" id="Ctg-pR-pkb"/>
+                            <constraint firstItem="MC1-9u-BXg" firstAttribute="top" secondItem="OUW-ek-f9g" secondAttribute="top" id="D8S-4d-6WR"/>
+                            <constraint firstAttribute="bottom" secondItem="MC1-9u-BXg" secondAttribute="bottom" id="S9o-DV-TV2"/>
+                            <constraint firstAttribute="trailing" secondItem="MC1-9u-BXg" secondAttribute="trailing" id="rrk-Jt-g9x"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yZ2-Ce-U9I"/>
+                    <connections>
+                        <segue destination="3Na-2G-daL" kind="show" id="G1C-bY-eTI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoG-Jn-1Ej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1118.840579710145" y="144.64285714285714"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Avp-le-MxT">
+            <objects>
+                <viewController id="3Na-2G-daL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5pE-fi-Emx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qvC-uN-M3K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6RY-Gn-HZx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZ0-L6-6bH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="151"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="G1C-bY-eTI"/>
         <segue reference="K5K-LD-3oQ"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Pathogen.jpeg" width="256" height="256"/>
+        <image name="Predator Cell.jpeg" width="256" height="256"/>
+        <image name="Red Cell.jpeg" width="128" height="128"/>
+        <image name="White Cell.jpeg" width="256" height="256"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
