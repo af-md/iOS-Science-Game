@@ -12,6 +12,7 @@ class LeaderBoardViewController : UIViewController,
                                   UITableViewDataSource,
                                   UITableViewDelegate {
     
+    // identify the cell
     let cellIdentifier = "cellIdentifier"
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -19,6 +20,7 @@ class LeaderBoardViewController : UIViewController,
         return appDelegate.gameData.getPlayerData().count
     }
     
+    // creates a table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath as IndexPath)
         let players = appDelegate.gameData.getPlayerData()
@@ -31,11 +33,13 @@ class LeaderBoardViewController : UIViewController,
         addPlayerToGameData()
     }
     
+    // add the header to the table
     func tableView(_ tableView: UITableView, titleForHeaderInSection
                                 section: Int) -> String? {
        return "Name         Points"
     }
     
+    // adds the data of the current player to the existent game data
     func addPlayerToGameData() {
         let player = appDelegate.player
         

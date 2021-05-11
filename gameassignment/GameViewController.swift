@@ -29,10 +29,10 @@ class GameViewController : UIViewController {
         
     }
     
+    // called from within the Game Scene to present the leader board controller
     public func presentLeaderBoardController() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let leaderBoardView  = storyBoard.instantiateViewController(withIdentifier: "LeaderBoardViewController") as! LeaderBoardViewController
-        //present(leaderBoardView, animated: true, completion: nil)
         navigationController?.pushViewController(leaderBoardView, animated: true)
     }
     

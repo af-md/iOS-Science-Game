@@ -23,35 +23,48 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
     // delegates for model retrival
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
+    // labels for health and points
     let healthLabel = SKLabelNode()
     let pointsLabel = SKLabelNode()
     
     var gameViewController:GameViewController!
+    
+    fileprivate func nameEachNode() {
+        // name each node
+        redCell.name = "redcell"
+        whiteCell.name = "whitecell"
+        pathogen.name = "pathogen"
+        playerCell.name = "playercell"
+    }
+    
+    fileprivate func positionEachNode() {
+        // position the cell
+        redCell.position = CGPoint(x: 60, y: size.height)
+        whiteCell.position = CGPoint(x: 200, y: size.height + 80)
+        pathogen.position = CGPoint(x: 350, y: size.height + 140)
+        playerCell.position = CGPoint(x: size.width/2, y: 60)
+    }
+    
+    fileprivate func setSizeForEachNode() {
+        // set size each cell
+        redCell.size = CGSize(width: 80, height: 80)
+        whiteCell.size = CGSize(width: 80, height: 80)
+        pathogen.size = CGSize(width: 80, height: 80)
+        playerCell.size = CGSize(width: 80, height: 80)
+    }
     
     override func didMove(to view: SKView) {
         
         // set physic world in this view
         physicsWorld.contactDelegate = self
 
-        // name each node
-        redCell.name = "redcell"
-        whiteCell.name = "whitecell"
-        pathogen.name = "pathogen"
-        playerCell.name = "playercell"
+        nameEachNode()
         
-        // position the cell
-        redCell.position = CGPoint(x: 60, y: size.height)
-        whiteCell.position = CGPoint(x: 200, y: size.height + 80)
-        pathogen.position = CGPoint(x: 350, y: size.height + 140)
-        playerCell.position = CGPoint(x: size.width/2, y: 60)
+        positionEachNode()
         
-        // position each cell
-        redCell.size = CGSize(width: 80, height: 80)
-        whiteCell.size = CGSize(width: 80, height: 80)
-        pathogen.size = CGSize(width: 80, height: 80)
-        playerCell.size = CGSize(width: 80, height: 80)
+        setSizeForEachNode()
         
-        // add detection
+        // add detection on each node
         addPhisycs(node: redCell)
         addPhisycs(node: whiteCell)
         addPhisycs(node: pathogen)
@@ -101,6 +114,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
     
     var playerLocation = CGPoint()
     
+    // allows to scroll the cell Player to catch other cells
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
                 let touch = touches.first
                 if let location = touch?.location(in: self) {
@@ -110,7 +124,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
                 }
             }
     
-
+    // functions triggers after each collision. allows to detect which object detected which one.
     func didBegin(_ contact: SKPhysicsContact) {
         let move2 = SKAction.moveTo(y: size.height, duration:0)
 
@@ -136,6 +150,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
         
     }
 
+    // called per frame to move the raining objects into their position
     override func update(_ currentTime: TimeInterval) {
         
         // reset cells position to slide down again
