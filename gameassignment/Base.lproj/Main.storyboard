@@ -67,6 +67,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="6vc-Hh-xmK" kind="show" id="Jev-Ff-QJr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Soh-Ec-JJg"/>
@@ -89,21 +92,21 @@
             </objects>
             <point key="canvasLocation" x="250.72463768115944" y="144.64285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Instructions View Controller-->
         <scene sceneID="reg-EU-aFb">
             <objects>
-                <viewController id="aDD-ud-z9b" sceneMemberID="viewController">
+                <viewController id="aDD-ud-z9b" customClass="InstructionsViewController" customModule="gameassignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OUW-ek-f9g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MC1-9u-BXg">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MC1-9u-BXg">
                                 <rect key="frame" x="-1" y="0.0" width="415" height="896"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wRn-pt-MXa">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wRn-pt-MXa">
                                         <rect key="frame" x="0.0" y="0.0" width="415" height="3000"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTx-ly-7B3">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTx-ly-7B3">
                                                 <rect key="frame" x="0.0" y="0.0" width="415" height="3000"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvw-4Z-10L">
@@ -119,8 +122,18 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsK-xm-GGw">
-                                                        <rect key="frame" x="8" y="83" width="399" height="501.5"/>
-                                                        <mutableString key="text">Welcome to the Basic Cell Survive Game. This game will teach you what a cell consumes to survive. Points will be gained by consuming white and red blood cells. If a Pathogen is consumed, you will lose 1 health. Cells are the basic building blocks of all living things. The human body is composed of trillions of cells. They provide structure for the body, take in nutrients from food, convert those nutrients into energy, and carry out specialized functions. Cells also contain the body’s hereditary material and can make copies of themselves. Below image of a cell.</mutableString>
+                                                        <rect key="frame" x="30" y="83" width="355" height="573"/>
+                                                        <string key="text">Welcome to the Basic Cell Survive Game. 
+
+This game will teach you what a cell consumes to survive. Points will be gained by consuming white and red blood cells. 
+
+If a Pathogen is consumed, you will lose 1 health. 
+
+Cells are the basic building blocks of all living things. The human body is composed of trillions of cells. 
+
+They provide structure for the body, take in nutrients from food, convert those nutrients into energy, and carry out specialized functions. Cells also contain the body’s hereditary material and can make copies of themselves. Below image of a cell.
+
+</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -132,36 +145,40 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfB-bJ-RjF">
-                                                        <rect key="frame" x="8" y="781.5" width="399" height="387"/>
+                                                        <rect key="frame" x="30" y="853" width="355" height="387"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="387" id="0Jf-xD-7rK"/>
                                                         </constraints>
-                                                        <string key="text">To survive, every cell must have a constant supply of vital substances such as sugar, minerals, and oxygen, and dispose of waste products, all carried back and forth by the blood cells, such as white and red blood cells. The main job of red blood cells, represented in the image below, is to carry oxygen from the lungs to the body tissues and carbon dioxide as a waste product, away from the tissues and back to the lungs.</string>
+                                                        <string key="text">To survive, every cell must have a constant supply of vital substances such as sugar, minerals, and oxygen, and dispose of waste products, all carried back and forth by the blood cells, such as white and red blood cells. 
+
+
+The main job of red blood cells, represented in the image below, is to carry oxygen from the lungs to the body tissues and carbon dioxide as a waste product, away from the tissues and back to the lungs.
+</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Cell.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="V24-GK-61E">
-                                                        <rect key="frame" x="74" y="1201" width="240" height="128"/>
+                                                        <rect key="frame" x="74" y="1272.5" width="240" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="240" id="LYA-7z-mlJ"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgh-hy-Vf0">
-                                                        <rect key="frame" x="8" y="1357" width="399" height="95.5"/>
+                                                        <rect key="frame" x="30" y="1428.5" width="355" height="95.5"/>
                                                         <string key="text">White blood cells, as shown in the image above, are part of the body's immune system. They help the body fight infection and other diseases.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White Cell.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-Gm-S5j">
-                                                        <rect key="frame" x="74" y="1477" width="240" height="128"/>
+                                                        <rect key="frame" x="74" y="1548.5" width="240" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="7pI-UZ-Cef"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A pathogen brings disease to its host. Another name for a pathogen is an infectious agent, as they cause infections." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6n-dP-Nyt">
-                                                        <rect key="frame" x="8" y="1654" width="399" height="130"/>
+                                                        <rect key="frame" x="30" y="1725.5" width="355" height="130"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="130" id="qzw-xu-dtN"/>
                                                         </constraints>
@@ -170,17 +187,24 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pathogen.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-zW-aZG">
-                                                        <rect key="frame" x="74" y="1822" width="240" height="128"/>
+                                                        <rect key="frame" x="74" y="1893.5" width="240" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="tSP-h0-yhY"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-I1-Rhx">
-                                                        <rect key="frame" x="8" y="1982" width="399" height="334"/>
+                                                        <rect key="frame" x="30" y="2053.5" width="355" height="334"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="334" id="6MP-iS-fQB"/>
                                                         </constraints>
-                                                        <string key="text">In this game you will have to absorb nutrients and protection from white and red blood cells and avoid the pathogens. The more red and white blood cells your absorb, the more survival points you will gain. Pathogen consumptions is the opposite, you will lose health point. You will be given 5 health points, if you do not avoid the pathogens, you could kill the cell.</string>
+                                                        <string key="text">In this game you will have to absorb nutrients and protection from white and red blood cells and avoid the pathogens. 
+
+
+The more red and white blood cells your absorb, the more survival points you will gain. Pathogen consumptions is the opposite, you will lose health point. 
+
+
+You will be given 5 health points, if you do not avoid the pathogens, you could kill the cell.
+</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -198,7 +222,7 @@
                                                             </fragment>
                                                             <fragment content="😁">
                                                                 <attributes>
-                                                                    <font key="NSFont" size="23" name=".AppleColorEmojiUI"/>
+                                                                    <font key="NSFont" metaFont="system" size="23"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                                         <tabStops/>
                                                                     </paragraphStyle>
@@ -232,7 +256,7 @@
                                                             </attributedString>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="3Na-2G-daL" kind="show" id="Hbt-GU-ewW"/>
+                                                            <action selector="allowGamePlay:" destination="aDD-ud-z9b" eventType="touchUpInside" id="c1Z-Jy-C6E"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -305,6 +329,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="yZ2-Ce-U9I"/>
                     <connections>
+                        <outlet property="editText" destination="DcN-22-f9z" id="z7r-70-qaG"/>
+                        <outlet property="playButton" destination="UZA-Eh-Akh" id="CIC-Dg-8YV"/>
                         <segue destination="3Na-2G-daL" kind="show" id="G1C-bY-eTI"/>
                     </connections>
                 </viewController>
@@ -312,25 +338,66 @@
             </objects>
             <point key="canvasLocation" x="1118.840579710145" y="144.64285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="Avp-le-MxT">
             <objects>
-                <viewController id="3Na-2G-daL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5pE-fi-Emx">
+                <viewController storyboardIdentifier="GameViewController" id="3Na-2G-daL" customClass="GameViewController" customModule="gameassignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="GameViewController" id="5pE-fi-Emx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qvC-uN-M3K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="6RY-Gn-HZx"/>
+                    <connections>
+                        <segue destination="6vc-Hh-xmK" kind="show" id="yPL-0f-jJt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZ0-L6-6bH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857" y="151"/>
         </scene>
+        <!--Leader Board View Controller-->
+        <scene sceneID="8OM-NL-usD">
+            <objects>
+                <viewController storyboardIdentifier="LeaderBoardViewController" id="6vc-Hh-xmK" customClass="LeaderBoardViewController" customModule="gameassignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LeaderBoardViewController" id="Ut8-et-BKw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kb0-yg-Ddj">
+                                <rect key="frame" x="54" y="351" width="307" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="Prf-DM-BMq">
+                                        <rect key="frame" x="0.0" y="28" width="307" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Prf-DM-BMq" id="ZQp-PV-65D">
+                                            <rect key="frame" x="0.0" y="0.0" width="307" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6vc-Hh-xmK" id="42J-I3-eAI"/>
+                                    <outlet property="delegate" destination="6vc-Hh-xmK" id="qo9-6B-qhB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dDE-Nm-2bk"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="srn-8j-RiE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naR-5I-z9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2573.913043478261" y="160.71428571428569"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G1C-bY-eTI"/>
+        <segue reference="yPL-0f-jJt"/>
         <segue reference="K5K-LD-3oQ"/>
     </inferredMetricsTieBreakers>
     <resources>

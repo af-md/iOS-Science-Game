@@ -13,10 +13,16 @@
 		427B71CA264145A200128855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427B71C8264145A200128855 /* Main.storyboard */; };
 		427B71CC264145A400128855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427B71CB264145A400128855 /* Assets.xcassets */; };
 		427B71CF264145A400128855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427B71CD264145A400128855 /* LaunchScreen.storyboard */; };
+		4282B4C3264ABBE20003196B /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B4C2264ABBE20003196B /* LeaderBoardViewController.swift */; };
+		4282B4C7264B30520003196B /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B4C6264B30520003196B /* GameData.swift */; };
+		4282B4CA264B366A0003196B /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B4C9264B366A0003196B /* InstructionsViewController.swift */; };
+		42B759162643E92900D6A05E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B759152643E92900D6A05E /* GameViewController.swift */; };
+		42B7591A2643EA5600D6A05E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B759192643EA5600D6A05E /* GameScene.swift */; };
 		42D7F942264321C100304DDF /* Predator Cell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F93E264321C100304DDF /* Predator Cell.jpeg */; };
 		42D7F943264321C100304DDF /* Pathogen.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F93F264321C100304DDF /* Pathogen.jpeg */; };
 		42D7F944264321C100304DDF /* Red Cell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F940264321C100304DDF /* Red Cell.jpeg */; };
 		42D7F945264321C100304DDF /* White Cell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F941264321C100304DDF /* White Cell.jpeg */; };
+		42F244672649D051009A9F43 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F244662649D051009A9F43 /* PlayerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +34,16 @@
 		427B71CB264145A400128855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		427B71CE264145A400128855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		427B71D0264145A400128855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4282B4C2264ABBE20003196B /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
+		4282B4C6264B30520003196B /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		4282B4C9264B366A0003196B /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		42B759152643E92900D6A05E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		42B759192643EA5600D6A05E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		42D7F93E264321C100304DDF /* Predator Cell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Predator Cell.jpeg"; sourceTree = "<group>"; };
 		42D7F93F264321C100304DDF /* Pathogen.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pathogen.jpeg; sourceTree = "<group>"; };
 		42D7F940264321C100304DDF /* Red Cell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red Cell.jpeg"; sourceTree = "<group>"; };
 		42D7F941264321C100304DDF /* White Cell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "White Cell.jpeg"; sourceTree = "<group>"; };
+		42F244662649D051009A9F43 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,12 @@
 				427B71CB264145A400128855 /* Assets.xcassets */,
 				427B71CD264145A400128855 /* LaunchScreen.storyboard */,
 				427B71D0264145A400128855 /* Info.plist */,
+				42B759152643E92900D6A05E /* GameViewController.swift */,
+				42B759192643EA5600D6A05E /* GameScene.swift */,
+				42F244662649D051009A9F43 /* PlayerModel.swift */,
+				4282B4C2264ABBE20003196B /* LeaderBoardViewController.swift */,
+				4282B4C6264B30520003196B /* GameData.swift */,
+				4282B4C9264B366A0003196B /* InstructionsViewController.swift */,
 			);
 			path = gameassignment;
 			sourceTree = "<group>";
@@ -161,7 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4282B4C3264ABBE20003196B /* LeaderBoardViewController.swift in Sources */,
+				42F244672649D051009A9F43 /* PlayerModel.swift in Sources */,
+				42B7591A2643EA5600D6A05E /* GameScene.swift in Sources */,
+				4282B4CA264B366A0003196B /* InstructionsViewController.swift in Sources */,
 				427B71C7264145A200128855 /* ViewController.swift in Sources */,
+				42B759162643E92900D6A05E /* GameViewController.swift in Sources */,
+				4282B4C7264B30520003196B /* GameData.swift in Sources */,
 				427B71C3264145A200128855 /* AppDelegate.swift in Sources */,
 				427B71C5264145A200128855 /* SceneDelegate.swift in Sources */,
 			);
