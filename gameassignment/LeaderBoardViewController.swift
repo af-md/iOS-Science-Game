@@ -43,8 +43,15 @@ class LeaderBoardViewController : UIViewController,
     func addPlayerToGameData() {
         let player = appDelegate.player
         
-        print(player.getName() + "  " + String(player.getPoints()))
-        
-        appDelegate.gameData.players.append(player)
+        if !player.getName().isEmpty {
+            
+            let gameData = appDelegate.gameData.getPlayerData()
+            
+            let object = gameData.firstIndex(where: { $0.getName() == player.getName()})
+            
+            if object == nil {
+                appDelegate.gameData.players.append(player)
+            }
+        }
     }
 }

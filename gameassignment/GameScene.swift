@@ -90,11 +90,14 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
         healthLabel.color = UIColor.black
         healthLabel.fontSize = 20
         healthLabel.position = CGPoint(x: 140, y: 750);
+        healthLabel.fontName = "AvenirNext-Bold"
         
         pointsLabel.text = "Points: " + String(appDelegate.player.getPoints())
         pointsLabel.color = UIColor.black
         pointsLabel.fontSize = 20
         pointsLabel.position = CGPoint(x: 300, y: 750);
+        pointsLabel.fontName = "AvenirNext-Bold"
+
 
         addChild(pointsLabel)
         addChild(healthLabel)
@@ -143,8 +146,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate {
             appDelegate.player.decreaseHealth()
         }
         
-        // change this to 0
-        if appDelegate.player.getHealth() == 4 {
+        if appDelegate.player.getHealth() <= 0 {
             gameViewController.presentLeaderBoardController()
         }
         
