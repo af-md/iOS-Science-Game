@@ -6,15 +6,32 @@
 //
 
 import UIKit
+import AVFoundation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    	public let player = PlayerModel()
-        public let gameData = GameData()
+    public let player = PlayerModel()
+    public let gameData = GameData()
+    
+    var audioPlayer : AVAudioPlayer!
+
+
+   
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+         
+        // Add sound
+        let soundURL = Bundle.main.url(forResource: "Game Audio", withExtension: "mpeg")
+        do {
+                    audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)
+                    audioPlayer.play()
+        }
+        catch {
+                    print(error)
+        }
         return true
     }
 

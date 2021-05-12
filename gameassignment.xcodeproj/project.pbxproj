@@ -16,6 +16,7 @@
 		4282B4C3264ABBE20003196B /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B4C2264ABBE20003196B /* LeaderBoardViewController.swift */; };
 		4282B4C7264B30520003196B /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B4C6264B30520003196B /* GameData.swift */; };
 		4282B4CA264B366A0003196B /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B4C9264B366A0003196B /* InstructionsViewController.swift */; };
+		4294FC26264C09FD007D1FF4 /* Game Audio.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4294FC25264C09FD007D1FF4 /* Game Audio.mpeg */; };
 		42B759162643E92900D6A05E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B759152643E92900D6A05E /* GameViewController.swift */; };
 		42B7591A2643EA5600D6A05E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B759192643EA5600D6A05E /* GameScene.swift */; };
 		42D7F942264321C100304DDF /* Predator Cell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42D7F93E264321C100304DDF /* Predator Cell.jpeg */; };
@@ -37,6 +38,7 @@
 		4282B4C2264ABBE20003196B /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		4282B4C6264B30520003196B /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		4282B4C9264B366A0003196B /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		4294FC25264C09FD007D1FF4 /* Game Audio.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = "Game Audio.mpeg"; sourceTree = "<group>"; };
 		42B759152643E92900D6A05E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		42B759192643EA5600D6A05E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		42D7F93E264321C100304DDF /* Predator Cell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Predator Cell.jpeg"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		42D7F93D2642ED4600304DDF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4294FC25264C09FD007D1FF4 /* Game Audio.mpeg */,
 				42D7F93F264321C100304DDF /* Pathogen.jpeg */,
 				42D7F93E264321C100304DDF /* Predator Cell.jpeg */,
 				42D7F940264321C100304DDF /* Red Cell.jpeg */,
@@ -164,6 +167,7 @@
 			files = (
 				42D7F943264321C100304DDF /* Pathogen.jpeg in Resources */,
 				427B71CF264145A400128855 /* LaunchScreen.storyboard in Resources */,
+				4294FC26264C09FD007D1FF4 /* Game Audio.mpeg in Resources */,
 				427B71CC264145A400128855 /* Assets.xcassets in Resources */,
 				427B71CA264145A200128855 /* Main.storyboard in Resources */,
 				42D7F944264321C100304DDF /* Red Cell.jpeg in Resources */,
